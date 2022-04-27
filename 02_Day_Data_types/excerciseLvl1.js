@@ -3,10 +3,10 @@
 let challenge = '30 Days Of JavaScript';
 
 //2. Print the string on the browser console using console.log()
-//console.log(challenge)
+console.log(challenge);
 
 //3.Print the length of the string on the browser console using console.log()
-//console.log(challenge.length)
+console.log(challenge.length);
 
 //4. Change all the string characters to capital letters using toUpperCase() method
 // console.log(challenge.toUpperCase())
