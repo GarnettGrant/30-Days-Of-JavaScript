@@ -5,4 +5,35 @@
 
 let newDate = new Date();
 
-console.log(dateFormater)
+function dateFormater(date, separator){
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    //Day format
+    if (day < 10){
+        day = '0' + day;
+    }
+
+    ///Month format
+    if (month < 10){
+        month = '0' + month;
+    }
+
+    //Hour format
+    if (hour < 10){
+        hour = '0' + hour;
+    }
+
+    //Minute format
+    if (minute < 10){
+        minute = '0' + minute;
+    }
+
+    return (`${year}${separator}${month}${separator}${day} ${hour}:${minute}`);
+}
+
+console.log(dateFormater(newDate,'-'));
