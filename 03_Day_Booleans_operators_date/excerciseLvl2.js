@@ -155,6 +155,6 @@ let ageDiff = (myAge > yourAge) ? myAge - yourAge : yourAge - myAge;
 //DD/MM/YYYY HH:mm
 
 let date = new Date();
-let dateOne = (`${date.getFullYear()}-${date.getMonth()}-${date.getDay()} ${date.getHours()}:${date.getMinutes()}`);
-let dateTwo = (`${date.getDay()}-${date.getMonth()}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`);
-let dateThree = (`${date.getDay()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`);
+let dateOne = (`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDay() + 1} ${date.getHours()}:${date.getMinutes()}`);
+let dateTwo = (`${date.getDay() + 1}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`);
+let dateThree = (`${date.getDay() + 1}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`);
