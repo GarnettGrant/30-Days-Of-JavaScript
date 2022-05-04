@@ -1,0 +1,3 @@
+var countries = [];
+
+export{countries};

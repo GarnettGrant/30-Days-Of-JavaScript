@@ -1,0 +1,3 @@
+const webTechs = [];
+
+export{webTechs};
