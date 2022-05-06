@@ -33,4 +33,18 @@ Math.abs((agesMax - agesAvg));
 let comparison 
 
 //2. Find the middle country(ies) in the countries array
-let middleCountries = countries;
+let middleCountries = countries[Math.round((countries.length -1) / 2)];
+
+//3. Divide the countries array into two equal arrays if it is even. If countries array is not even , add one more country for the first half.
+const half = Math.round(countries.length / 2);
+
+let firstHalf = [];
+let secondHalf = [];
+if (!(countries.length % 2 == 0)){
+    firstHalf = countries.slice(0, half);
+    secondHalf = countries.slice(-half);
+} else {
+    firstHalf = countries.slice(0, half);
+    secondHalf = countries.slice(-half);
+    firstHalf.push('Ghana');
+}
