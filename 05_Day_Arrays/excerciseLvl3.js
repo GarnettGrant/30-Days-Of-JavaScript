@@ -1,4 +1,5 @@
 "use strict";
+
 //1. The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
@@ -30,7 +31,6 @@ let agesRange = agesMax - agesMin;
 Math.abs((agesMin - agesAvg));
 Math.abs((agesMax - agesAvg));
 
-let comparison 
 
 //2. Find the middle country(ies) in the countries array
 let middleCountries = countries[Math.round((countries.length -1) / 2)];
